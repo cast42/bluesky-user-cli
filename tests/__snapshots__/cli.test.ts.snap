@@ -1,0 +1,102 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`cli help > renders followers help text 1`] = `
+"Usage: bluesky-user-cli followers [options] <actor>
+
+Fetch the accounts following a Bluesky user.
+
+Arguments:
+  actor            Actor handle, bare username, or DID (example: cast42 or
+                   cast42.bsky.social)
+
+Options:
+  --page-size <n>  Page size for each API call (1-100). Default: 100
+  --max-items <n>  Optional cap on returned follower records.
+  -h, --help       display help for command
+"
+`;
+
+exports[`cli help > renders follows help text 1`] = `
+"Usage: bluesky-user-cli follows [options] <actor>
+
+Fetch the accounts followed by a Bluesky user.
+
+Arguments:
+  actor            Actor handle, bare username, or DID (example: cast42 or
+                   cast42.bsky.social)
+
+Options:
+  --page-size <n>  Page size for each API call (1-100). Default: 100
+  --max-items <n>  Optional cap on returned follow records.
+  -h, --help       display help for command
+"
+`;
+
+exports[`cli help > renders likes help text 1`] = `
+"Usage: bluesky-user-cli likes [options] <actor>
+
+Fetch posts liked by a Bluesky user.
+
+Arguments:
+  actor            Actor handle, bare username, or DID (example: cast42 or
+                   cast42.bsky.social)
+
+Options:
+  --page-size <n>  Page size for each API call (1-100). Default: 100
+  --max-items <n>  Optional cap on returned liked posts.
+  --since <value>  Filter liked posts since this timestamp (ISO, YYYY-MM-DD,
+                   today, yesterday).
+  -h, --help       display help for command
+"
+`;
+
+exports[`cli help > renders posts help text 1`] = `
+"Usage: bluesky-user-cli posts [options] <actor>
+
+Fetch posts from accounts in a user network (follows/followers).
+
+Arguments:
+  actor            Actor handle, bare username, or DID (example: cast42 or
+                   cast42.bsky.social)
+
+Options:
+  --from <source>  Network source: follows, followers, or both. Default:
+                   follows
+  --page-size <n>  Page size for each API call (1-100). Default: 100
+  --max-posts <n>  Return at most N newest posts after aggregation/sorting.
+  --since <value>  Return posts since this timestamp (ISO, YYYY-MM-DD, today,
+                   yesterday).
+  -h, --help       display help for command
+"
+`;
+
+exports[`cli help > renders root help text 1`] = `
+"Usage: bluesky-user-cli [options] [command]
+
+Fetch follows, followers, likes, and posts for a Bluesky user.
+
+Options:
+  -V, --version                output the version number
+  --access-token <token>       Bluesky access token. Overrides
+                               BLUESKY_ACCESS_TOKEN from environment.
+  --identifier <identifier>    Bluesky handle or email used with --app-password
+                               to create a session automatically. Overrides
+                               BLUESKY_IDENTIFIER.
+  --app-password <password>    Bluesky app password used with --identifier to
+                               create a session automatically. Overrides
+                               BLUESKY_APP_PASSWORD.
+  --service-url <url>          Bluesky auth service URL. With
+                               --identifier/--app-password, the data service
+                               endpoint is resolved automatically.
+  --pretty                     Pretty-print JSON output
+  -h, --help                   display help for command
+
+Commands:
+  follows [options] <actor>    Fetch the accounts followed by a Bluesky user.
+  followers [options] <actor>  Fetch the accounts following a Bluesky user.
+  likes [options] <actor>      Fetch posts liked by a Bluesky user.
+  posts [options] <actor>      Fetch posts from accounts in a user network
+                               (follows/followers).
+  help [command]               display help for command
+"
+`;
