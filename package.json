@@ -1,5 +1,5 @@
 {
-  "name": "@openclaw/bluesky-user-cli",
+  "name": "@cast42/bluesky-user-cli",
   "version": "0.1.0",
   "description": "CLI to fetch follows, followers, likes, and network posts for a Bluesky user",
   "license": "MIT",

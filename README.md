@@ -5,7 +5,7 @@ TypeScript CLI for fetching follows, followers, liked posts, and network posts f
 ## Install
 
 ```bash
-npm install -g @openclaw/bluesky-user-cli
+npm install -g @cast42/bluesky-user-cli
 ```
 
 ## Authentication
@@ -17,7 +17,7 @@ Choose one auth mode:
 - CLI flag (highest priority): `--access-token`
 - Environment variable: `BLUESKY_ACCESS_TOKEN`
 
-2. App password mode:
+1. App password mode:
 
 - `--identifier <handle-or-email>`
 - `--app-password <app-password>`
