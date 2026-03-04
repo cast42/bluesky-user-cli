@@ -1,4 +1,4 @@
-# @openclaw/bluesky-user-cli
+# @cast42/bluesky-user-cli
 
 TypeScript CLI for fetching follows, followers, liked posts, and network posts for a Bluesky user.
 
